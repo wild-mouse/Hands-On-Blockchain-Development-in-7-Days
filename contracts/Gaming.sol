@@ -1,4 +1,4 @@
-pragma solidity 0.5.0;
+pragma solidity 0.5.16;
 
 contract Gaming {
     /* Our Online gaming contract */
@@ -15,8 +15,8 @@ contract Gaming {
     }
 
     mapping (uint => Player) players;
-    
-    
+
+
     constructor() public payable {
         owner = msg.sender;
         online = true;
